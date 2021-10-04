@@ -37,41 +37,6 @@ def predict_user():
         rec_ids = list(dubloo_score.index)
         temp = dataframe.iloc[rec_ids][1:6]
         result = temp.iloc[:, 1:-1]
-      #   path = './templates/op.html'
-      #   html_string_start = '''
-      #   <html>
-      #     <head><title>Recommendations</title></head>
-      #       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-      #       <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-      #     <body>
-      # <h1 style="text-align:center">Geek Tinder</h1>
-      # <div style="overflow-x:auto;">
-      #   '''
-      #   html_string_end = '''
-      #   </div>
-      #     </body>
-      #   </html>
-      #   '''
-      #   with open(path, 'w') as f:
-      #       f.write(html_string_start)
-      #       f.write('<table>')
-      #       for header in result.columns.values:
-      #           f.write('<th>' + str(header).capitalize() + '</th>')
-      #       for i in range(len(result)):
-      #           f.write('<tr>')
-      #           for col in result.columns:
-      #               value = result.iloc[i][col]
-      #               if col != "user_id":
-      #                   value = value.capitalize()
-      #                   if col != "subdomain":
-      #                       temp_list = value.split(" ")
-      #                       temp_list = [x.capitalize() for x in temp_list]
-      #                       value = ",".join(temp_list)
-      #               f.write('<td>' + str(value) + '</td>')
-      #           f.write('</tr>')
-      #       f.write('</table>')
-      #       f.write(html_string_end)
-      #   return render_template("op.html")
         return render_template('simple.html',  tables=[result.to_html(classes='data')], titles=result.columns.values)
     return render_template('index.html')
 
