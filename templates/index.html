@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkillMate</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="form-style-10">
+    <h1>Geek Tinder</h1>
+    <form action="{{ url_for('predict_user')}}" method="post">
+        <div class="section"><span>1</span>First Name</div>
+        <div class="inner-wrap">
+            <label>Your Full Name <input type="text" name="name"/></label>
+            <label>Age <textarea name="age"></textarea></label>
+        </div>
+
+        <div class="section" for="domain"><span>2</span>Domain</div>
+        <div class="inner-wrap">
+            <select name="domain">
+                <option value="datascience">Data Science</option>
+                <option value="webdevelopment">Web Development</option>
+                <option value="appdevelopment">App Development</option>
+                <option value="blockchain">Blockchain</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="devops">Devops</option>
+            </select>
+        </div>
+
+        <div class="section"><span>2</span>Subdomain</div>
+        <div class="inner-wrap">
+            <input type="checkbox" name="subdomain" value="machinelearning">Machine Learning<br>
+            <input type="checkbox" name="subdomain" value="naturallanguageprocessing">NLP<br>
+            <input type="checkbox" name="subdomain" value="deeplearning">Deep Learning<br>
+            <input type="checkbox" name="subdomain" value="frontendwebdevelopment">Frontend development<br>
+            <input type="checkbox" name="subdomain" value="backendwebdevelopment">Backend development<br>
+            <input type="checkbox" name="subdomain" value="cryptography">Cryptography<br>
+            <input type="checkbox" name="subdomain" value="sass pass iass">Sass Pass Iass<br>
+            <input type="checkbox" name="subdomain" value="networking">Networking<br>
+            <input type="checkbox" name="subdomain" value="ethicalhacking">Ethical Hacking<br>
+            <br>
+        </div>
+
+        <div class="section"><span>2</span>Wanted Skills</div>
+        <div class="inner-wrap">
+            <input type="checkbox" name="skills" value="html">HTML<br>
+            <input type="checkbox" name="skills" value="css">CSS<br>
+            <input type="checkbox" name="skills" value="python">Python<br>
+            <input type="checkbox" name="skills" value="java">Java<br>
+            <input type="checkbox" name="skills" value="aws">AWS<br>
+            <input type="checkbox" name="skills" value="siem">Siem<br>
+            <input type="checkbox" name="skills" value="nodejs">Nodejs<br>
+            <input type="checkbox" name="skills" value="mongodb">MongoDB<br>
+            <input type="checkbox" name="skills" value="julia">Julia<br>
+            <input type="checkbox" name="skills" value="r">R<br>
+            <input type="checkbox" name="skills" value="sql">SQL<br>
+            <input type="checkbox" name="skills" value="javascript">Javascript<br>
+            <input type="checkbox" name="skills" value="flutter">Flutter<br>
+            <input type="checkbox" name="skills" value="scala">Scala<br>
+            <input type="checkbox" name="skills" value="kotlin">Kotlin<br>
+            <br>
+        </div>
+
+        <div class="button-section">
+            <input type="submit" name="Find my match!"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

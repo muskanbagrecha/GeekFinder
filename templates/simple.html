@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GeekTinder</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<h1 style="text-align:center">Geek Tinder</h1>
+<table>
+    {% for table in tables %}
+    <tbody>
+    {{titles[loop.index]}}
+    {{ table|safe }}
+    </tbody>
+    {% endfor %}
+</table>
+</body>
+</html>
