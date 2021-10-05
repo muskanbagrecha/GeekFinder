@@ -1,0 +1,96 @@
+/* spacing */
+body {
+  background-color: #2A88AD;
+}
+
+html,body {
+ background-image: url('/static/images/geek.jpg');
+
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #976f47;
+}
+
+th{
+
+}
+th, td {
+  padding: 20px;
+}
+/* typography */
+
+html {
+font-family: "Source Sans Pro", "Arial", sans-serif;}
+
+thead th, tfoot th {
+font-family: "Source Sans Pro", "Arial", sans-serif;}
+
+th {
+  letter-spacing: 2px;
+  font-size = 30px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+/* graphics and colors */
+
+thead, tfoot {
+  background: url(leopardskin.jpg);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid #976f47;
+}
+
+/* zebra striping */
+
+tbody tr:nth-child(odd) {
+  background-color: #e1cbb1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #976f47;
+}
+
+tbody tr {
+  background-image: url(noise.png);
+}
+
+table {
+  background-color: #976f47;
+}
+h1{
+        font-family: commanders;
+        	font-size: 100px;
+        	padding-top: 100px;
+}
+table {
+    left: 20px;
+    right: 20px;
+    top: 30%;
+    height: Hpx;
+}
+th {
+  font-size: 24px;
+}
+
+
+
+
